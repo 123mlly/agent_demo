@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# 智扫通机器人智能客服 / Agent Demo - Python Dependencies
+# Tested with Python >= 3.10
+# ─────────────────────────────────────────────────────────────
+
+# ── LangChain 1.0 生态 ─────────────────────────────────────────
+# create_agent / @before_model / @dynamic_prompt / @wrap_tool_call
+# 都依赖 langchain 1.0+ 的新 agent API
+langchain>=1.0.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-chroma>=0.2.0
+langchain-text-splitters>=0.3.0
+
+# ── LangGraph 状态机 + 持久化 ──────────────────────────────────
+# SqliteSaver checkpointer 用于会话历史持久化
+langgraph>=0.6.0
+langgraph-checkpoint-sqlite>=2.0.0
+
+# ── 向量数据库 ─────────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── 大模型 / Embedding 提供方（阿里云 DashScope / 通义千问） ─────
+# ChatTongyi 与 DashScopeEmbeddings 在底层调用 dashscope SDK
+dashscope>=1.20.0
+
+# ── 文档加载（PDF / TXT） ─────────────────────────────────────
+# PyPDFLoader 依赖 pypdf
+pypdf>=4.0.0
+
+# ── 前端 UI ───────────────────────────────────────────────────
+streamlit>=1.30.0
+
+# ── 通用工具 ───────────────────────────────────────────────────
+PyYAML>=6.0
+requests>=2.31.0

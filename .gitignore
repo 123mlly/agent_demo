@@ -1,0 +1,94 @@
+# ─────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# 单元测试 / 类型检查 / 覆盖率
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ─────────────────────────────────────────────────────────────
+# 虚拟环境
+# ─────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ─────────────────────────────────────────────────────────────
+# IDE / 编辑器
+# ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─────────────────────────────────────────────────────────────
+# 项目运行时产物（重要！）
+# ─────────────────────────────────────────────────────────────
+
+# LangGraph SQLite checkpointer 持久化的对话历史
+agent_history.db
+agent_history.db-shm
+agent_history.db-wal
+
+# Chroma 向量库本地持久化目录（首次构建后由代码生成）
+chroma_db/
+
+# RAG 入库去重用的 MD5 记录
+md5.text
+
+# 运行日志
+logs/
+*.log
+
+# Streamlit 本地缓存
+.streamlit/
+
+# ─────────────────────────────────────────────────────────────
+# 敏感信息 / 本地覆盖配置
+# ─────────────────────────────────────────────────────────────
+# 注意：config/rag.yml 含有 DashScope api_key
+# 已在仓库中的请用 `git rm --cached config/rag.yml` 移出版本控制
+# 推荐做法：提交一份 config/rag.example.yml 占位，本地覆盖到 rag.yml
+.env
+.env.local
+.env.*.local
+*.local.yml
+*.local.yaml
+
+# 个人临时文件
+scratch/
+tmp/
+*.tmp

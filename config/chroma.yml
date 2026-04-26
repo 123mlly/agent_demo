@@ -1,0 +1,12 @@
+collection_name: rag
+persist_directory: ./chroma_db
+k: 3
+data_path: data
+md5_hex_store: md5.text
+allowed_knowledge_types: ["pdf", "txt"]
+
+chunk_size: 200
+chunk_overlap: 20
+separators: ["\n\n", "\n", " ", "", "。", "，", "？", "！", "：", "；", "、", "《", "》", "【", "】", "（", "）", "“", "”", "‘", "’", "……", "——", "《", "》", "【", "】", "（", "）", "“", "”", "‘", "’", "……", "——"]
+
+
